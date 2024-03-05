@@ -16,9 +16,6 @@ public class DemoApplication {
 
     @RequestMapping("/")
     public String home() {
-        if(customProps.getHello().isEmpty()){
-            return "Hello World!";
-        }
         return "Hello " + customProps.getHello();
     }
 
