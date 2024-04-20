@@ -5,11 +5,14 @@ services:
       - 8080:8080
     environment:
       - SPRING_PROFILES_ACTIVE=dev
+      - JAVA_HELLO
+      - POSTGRES_DB
+      - POSTGRES_PASSWORD
   db:
     image: postgres:16.2
     restart: always
     environment:
-      - POSTGRES_DB=todos
-      - POSTGRES_PASSWORD=Password1!
+      - POSTGRES_DB
+      - POSTGRES_PASSWORD
     expose:
       - 5432
