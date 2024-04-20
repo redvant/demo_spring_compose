@@ -6,13 +6,16 @@ services:
     environment:
       - SPRING_PROFILES_ACTIVE
       - JAVA_HELLO
+      - POSTGRES_HOST=db
       - POSTGRES_DB
       - POSTGRES_PASSWORD
+      - POSTGRES_USER
   db:
     image: postgres:16.2
     restart: always
     environment:
       - POSTGRES_DB
       - POSTGRES_PASSWORD
+      - POSTGRES_USER
     expose:
       - 5432
