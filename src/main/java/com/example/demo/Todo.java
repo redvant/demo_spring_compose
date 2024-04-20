@@ -11,6 +11,7 @@ public class Todo {
 
     private String name;
     private String description;
+    private boolean completed;
 
     // getters and setters...
 }
