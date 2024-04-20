@@ -4,6 +4,7 @@ services:
     ports:
       - 8080:8080
     environment:
+      - SPRING_PROFILES_ACTIVE
       - JAVA_HELLO
       - POSTGRES_DB
       - POSTGRES_PASSWORD
